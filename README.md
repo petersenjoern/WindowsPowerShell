@@ -10,11 +10,11 @@ The collection contributes to:
 The Project is inspired by DevOps Engineer Jalal Hejazi
 
 # Repo overview
-## TODO: list directories and functionality summary
+#### TODO: list directories and functionality summary
 - tools: 
     -- scoop CLI with Powershell to automate the installation process like linux: 'https://get.scoop.sh'
-## TODO: add docker functionalities
-## TODO: add SSH-init for remote VMs
+TODO: add docker functionalities
+TODO: add SSH-init for remote VMs
 
 # Getting Started
 1. Setup
@@ -32,6 +32,6 @@ The Project is inspired by DevOps Engineer Jalal Hejazi
 
         # start powershell.exe 
         ```
-        
+
     - Or edit Microsoft.PowerShell_profile.ps1, Microsoft.PowerShellSE_profile.ps1 
       and Microsoft.VSCode_profile.ps1 accordingly to the location to where you are cloning this repo
