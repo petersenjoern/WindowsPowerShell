@@ -8,3 +8,4 @@
 . "$ProfileHOME\git\index.ps1"
 . "$ProfileHOME\env\index.ps1"
 . "$ProfileHOME\azure\index.ps1"
+. "$ProfileHOME\docker\index.ps1"
