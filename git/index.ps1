@@ -17,6 +17,6 @@ function git-config-alias {
     git config --global alias.gl "log --graph --oneline --decorate -n 20"
 }
 
-function gs { 
-    git status
+function gs-update { 
+    git submodule update
 }

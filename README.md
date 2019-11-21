@@ -19,8 +19,7 @@ TODO: add SSH-init for remote VMs
 # Getting Started
 1. Setup
 
-    - Before powershell.exe runs, the file named $profile must exist to configure your environments
-      To achieve this, follow the following commands:
+    - Clone the repo to the following location:
 
         ```
         cd ${Env:USERPROFILE}\Documents
@@ -33,5 +32,36 @@ TODO: add SSH-init for remote VMs
         # start powershell.exe 
         ```
 
-    - Or edit Microsoft.PowerShell_profile.ps1, Microsoft.PowerShellSE_profile.ps1 
-      and Microsoft.VSCode_profile.ps1 accordingly to the location to where you are cloning this repo
+    - Before powershell.exe runs, the file named $profile must exist to configure your environments
+    - You may have already a location for your PowerShell_profile.ps1 identify it by:
+
+      ```
+      $profile
+      ``` 
+      If so, edit the file and add:
+      
+      $ProfileHOME = "path_to_your_repo"
+      . "$profileHOME\index.ps1"
+
+    - If not, in the location create a file named "PowerShell_profile.ps1 and add:
+
+      $ProfileHOME = "path_to_your_repo"
+      . "$profileHOME\index.ps1"
+
+    - In the same location, you may want to add files called:
+      Microsoft.VSCode_profile.ps1 (if you are using VSCode)
+      Microsoft.PowerShellSE_profile.ps1 (SE editor)
+
+      In the files, edit the $ProfileHOME just like the files in this repo
+
+    - Install scoop for package management (similar to wget) for automation:
+        
+      ```
+      iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
+      scoop --version
+      ```
+
+2. Start Powershell
+
+  ## TODO: fundamental executions
+  

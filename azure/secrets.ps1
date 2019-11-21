@@ -1,5 +1,6 @@
 function get-azure-secret{
     param(
+        $keyvault,
         $secretName
     )
     $myPassword=(az keyvault secret show --vault-name $keyvault --name $secretName --query "value" --output tsv)
@@ -9,6 +10,7 @@ function get-azure-secret{
 
 function new-azure-secret{
     param(
+        $keyvault,
         $secretName,
         $secretValue
     )
@@ -16,6 +18,9 @@ function new-azure-secret{
 }
 
 function list-azure-secret {
+    param(
+        $keyvault
+    )
     az keyvault secret list  --vault-name $keyvault --query "[].id"
 }
 
