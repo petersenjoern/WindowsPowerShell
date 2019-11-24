@@ -5,6 +5,7 @@
     env-set azure-subscription   ''
     env-set azure-keyvault       '' 
     env-set AZURE_DEVOPS_EXT_PAT ''
+    env-set azure-acr            ''
 
     env-list azure*
 #>
@@ -27,5 +28,6 @@ if ($cloud) {
 . "$ProfileHOME\azure\secrets.ps1"
 . "$ProfileHOME\azure\vm-connect.ps1"
 . "$ProfileHOME\azure\devops.ps1"
-
-
+. "$ProfileHOME\azure\container-registry.ps1"
+. "$ProfileHOME\azure\service-principal.ps1"
+. "$ProfileHOME\azure\container-deploy.ps1"
