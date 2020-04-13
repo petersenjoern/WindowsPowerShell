@@ -19,11 +19,12 @@ function scoop-install-all {
 function scoop-install-web-tools {
     scoop install python
     scoop install Go
+    scoop install minikube
     pip install httpie
-    # scoop install dotnet-sdk
     scoop install nodejs
     npm install npm --global
     npm install typescript --global
+    # scoop install dotnet-sdk
     # npm install @angular/cli @nestjs/cli typescript --global
 }
 

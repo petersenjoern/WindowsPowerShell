@@ -1,3 +1,5 @@
+Set-PSReadlineKeyHandler -Chord Alt+F4 -Function ViExit
+
 
 function env-list { ls env:\$args }
 
