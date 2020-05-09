@@ -17,7 +17,9 @@ function scoop-install-all {
 
 
 function scoop-install-web-tools {
-    scoop install python
+    # https://github.com/lukesampson/scoop/wiki/Switching-Ruby-And-Python-Versions
+    scoop bucket add versions
+    scoop install python37 python
     scoop install Go
     scoop install minikube
     pip install httpie
